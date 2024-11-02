@@ -1,0 +1,12 @@
+[package]
+name = "bulletproofs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bulletproofs = "5.0.0"
+curve25519-dalek = "4.1.1"
+merlin = "3.0.0"
+rand = "0.8.0"
+criterion = "0.5.1"
+rayon = "1.10.0"
