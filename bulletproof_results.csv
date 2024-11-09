@@ -1,0 +1,5 @@
+Number of proofs,Generation time (s),Verification time (s),Proof size (bytes),Verified
+1,1.1894543,0.1365338,608,true
+2,2.33117,0.2491474,672,true
+4,4.6141769,0.4874594,736,true
+8,9.0917721,0.7958723,800,true
