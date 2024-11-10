@@ -77,7 +77,9 @@ fn run_bulletproofs(max_power: u32) {
         );
 
         // Secret values and blinding factors
-        let secrets = vec![4242344947u64; num_proofs];
+        let secrets: Vec<u64> = (0..num_proofs)
+            .map(|_| Scalar::random(&mut thread_rng()).to_bytes()[0] as u64)
+            .collect();
         let blindings: Vec<Scalar> = (0..num_proofs)
             .map(|_| Scalar::random(&mut thread_rng()))
             .collect();
